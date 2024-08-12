@@ -15,7 +15,15 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
+
+        String name ="pasindu";
+
         return ok(views.html.index.render());
+    }
+
+
+    public Result welcome(String name){
+        return ok(name);
     }
 
 }
