@@ -22,8 +22,8 @@ public class HomeController extends Controller {
     }
 
 
-    public Result welcome(String name){
-        return ok(name);
+    public Result welcome(String firstName , String lastName){
+        return ok("Hi, " + firstName+ " " + lastName + " welcome to our website");
     }
 
 }
